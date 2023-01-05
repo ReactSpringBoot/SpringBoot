@@ -2,7 +2,7 @@
 
 create database db02;
 
-CREATE TABLE `db02`.`user` (
+CREATE TABLE `db01`.`user` (
 `userNo` INT NOT NULL AUTO_INCREMENT,
 `name` VARCHAR(45) NULL,
 `id` VARCHAR(45) NULL,
@@ -10,7 +10,7 @@ CREATE TABLE `db02`.`user` (
 PRIMARY KEY (`userNo`),
 UNIQUE INDEX (id));
   
-CREATE TABLE `db02`.`board` (
+CREATE TABLE `db01`.`board` (
 `boardNo` INT NOT NULL AUTO_INCREMENT,
 `userNo` INT NOT NULL,
 `title` VARCHAR(45) NULL,
@@ -18,7 +18,7 @@ CREATE TABLE `db02`.`board` (
 `date` DATETIME NULL ,
 PRIMARY KEY (`boardNo`));
 
-CREATE TABLE `db02`.`comment` (
+CREATE TABLE `db01`.`comment` (
 `commentNo` INT NOT NULL AUTO_INCREMENT,
 `boardNo` INT NOT NULL,
 `userNo` INT NOT NULL,
